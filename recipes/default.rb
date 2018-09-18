@@ -14,7 +14,7 @@ end
 
 execute 'install toolbelt' do
   command node[:heroku_toolkit][:install_command]
-  creates '/usr/local/heroku/bin/heroku'
+  creates '/usr/bin/heroku'
 end
 
 # standalone is missing some dependencies.
